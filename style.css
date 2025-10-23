@@ -1,0 +1,190 @@
+/* rimozione dei bordi del body */
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ridimensionamento e posizionamento del logo */
+.logo{
+  height: 50px;
+  margin-top: 6px;
+}
+
+/* renderizzazione navbar */
+nav ul{
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+}
+
+li{
+  list-style-type: none;
+}
+
+header{
+  margin-top: 15vh;
+}
+
+/* customizzazione del titolo */
+h1{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+h2{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+}
+
+h3{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: rgb(237, 221, 44);
+}
+
+h4{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* posizionamento della sezione principale */
+.sprincipale, .ssecond{
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 40px;
+  gap: 16px;
+}
+
+/* renderizzazione dei link e dei bottoni */
+article> a{
+  /* padding-right: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:hover{
+  color: orange;
+}
+
+button:hover{
+  background-color: orange;
+}
+
+.iscrizione> a:hover{
+  color: black;
+}
+
+/* ridimensionamento e orientamento immagini delle sezioni */
+article> a img{
+  height: 200px;
+  align-self: center;
+}
+
+/* customizzazione della sezione centrale */
+.centro{
+  width: 70vw;
+  background-color: rgb(237, 221, 44);
+  margin-left: 15vw;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.tcentro{
+  margin-top: 0px;
+}
+
+/* creazione spazio sopra-sotto per la sezione ricerca */
+.ricerca{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* orientamento bottoni nelle sezioni */
+article> a button{
+  align-self: self-end;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+footer> p{
+  padding: 20px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    
+  nav ul{
+    display: block;
+    width: 100vw;
+    padding-bottom: 10px;
+    position: static;
+    top: 0px;
+  }
+
+  ul> li{
+    margin-left: 20px;
+  }
+
+  header{
+    margin-top: 20px;
+  }
+
+  .sprincipale, .ssecond{
+    display: block;
+    justify-content: space-evenly;
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+
+  article> a{
+    display: block;
+    flex-direction: column;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  article> a img{
+    width: 100vw;
+  }
+
+  .centro{
+    margin-left: 1.5vw;
+    width: 90vw;
+  }
+
+}
